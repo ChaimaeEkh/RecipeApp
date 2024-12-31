@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe app template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>FoodyChef</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <input type="search" placeholder="Search..">
+            <div class="cart-icon">
+                <i class="bi bi-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section" id="home">
+        <div class="title">
+            <h1>Delicious food is <br> waiting for you</h1>
+            <p>our team of registered nurses and skilled healthcare professionals provide in-home nursing</p>
+            <button>Food Menu</button>
+            <button>Book a Table</button>
+        </div>
+        <div class="image-plat">
+            <img src="a85b2a42f250f1ea3c81c6031abeb37f-removebg-preview.png" alt="">
+        </div>
+    </section>
+    <h1>Top List</h1>
+    <h5>Our mainstay menu</h5>
+    <section class="cards">
+        <div>
+            <img src="nd1-removebg-preview.png" alt="" class="plat">
+            <span class="stars" data-rating="9.1"></span>
+            <h4 class="title">Noodles three</h4>
+            <p class="descript">White plate with dried shrimps</p>
+            <h5 class="price">12$</h5>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div>
+            <img src="nd2-removebg-preview.png" alt="" class="plat">
+            <span class="stars" data-rating="9.1"></span>
+            <h4 class="title">Noodles one</h4>
+            <p class="descript">Noodles spicy boil with seafood and pork in hot pot</p>
+            <h5 class="price">20$</h5>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div>
+            <img src="nd3-removebg-preview.png" alt="" class="plat">
+            <span class="stars" data-rating="9.1"></span>
+            <h4 class="title">Noodles two</h4>
+            <p class="descript">Noodles prawn spicy soup</p>
+            <h5 class="price">16$</h5>
+            <button class="add-to-cart">+</button>            
+        </div>
+    </section>
+    <section class="potatoes">
+        <div class="plate">
+            <img src="pt.png" alt="">
+        </div>
+        <div class="description">
+            <h1>Best potatoes for <br> french fries</h1>
+            <p>Russet potatoes are ideal. <br> Since they're dense, they don't contain as much water inside, which allows them to fet extra crispy.</p>
+        </div>
+    </section>
+    <section class="services">
+        <h3>Our services</h3>
+        <span>Online booking</span>
+        <span>Catering service</span>
+        <span>Membership</span>
+        <span>Delivery service</span>
+    </section>
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="https://i.pinimg.com/736x/ad/7f/b3/ad7fb30371e79d0cd91627b2645c8cd5.jpg" alt="Our Chef" class="chef-image">
+            <div class="about-text">
+                <h3>Passion for Cooking</h3>
+                <p>At FoodyChef, we believe that great food brings people together. Our team of experienced chefs is dedicated to creating delicious, innovative recipes that inspire home cooks and food enthusiasts alike.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <span id="menu"></span>
+    <section class="italian-menu">
+        <h2>Italian Delights</h2>
+        <div class="menu-grid">
+            <!-- Pasta -->
+            <div class="menu-item" data-category="pasta">
+                <img src="https://i.pinimg.com/564x/93/44/17/934417511333c93de13318c34cf208e8.jpg" alt="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Creamy spaghetti with pancetta, egg, and parmesan</p>
+                <span class="price">$14.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="pasta">
+                <img src="https://i.pinimg.com/564x/84/25/35/842535d5b70981615bcbc47fc20d901c.jpg" alt="Penne Arrabbiata">
+                <h3>Penne Arrabbiata</h3>
+                <p>Penne pasta with spicy tomato sauce</p>
+                <span class="price">$13.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="pasta">
+                <img src="https://i.pinimg.com/564x/9d/0d/1f/9d0d1f2f328d560ae94d71be38f46cb8.jpg" alt="Lasagna Bolognese">
+                <h3>Lasagna Bolognese</h3>
+                <p>Layers of pasta with meat ragu, béchamel, and parmesan</p>
+                <span class="price">$17.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+    
+            <!-- Pizza -->
+            <div class="menu-item" data-category="pizza">
+                <img src="https://i.pinimg.com/564x/9d/2f/62/9d2f62b46c1a23bd26df0d455c3a388f.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Classic pizza with tomatoes, mozzarella, and basil</p>
+                <span class="price">$12.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="pizza">
+                <img src="https://i.pinimg.com/564x/52/2c/00/522c0045835fb82478ef76abcb293c47.jpg" alt="Pizza Quattro Formaggi">
+                <h3>Pizza Quattro Formaggi</h3>
+                <p>Four-cheese pizza with mozzarella, gorgonzola, parmesan, and provolone</p>
+                <span class="price">$15.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="pizza">
+                <img src="https://i.pinimg.com/564x/97/2e/13/972e13b00890e3d441be9aae612fa2ec.jpg" alt="Pizza Pepperoni">
+                <h3>Pizza Pepperoni</h3>
+                <p>Pizza with spicy pepperoni, mozzarella, and tomato sauce</p>
+                <span class="price">$13.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+    
+            <!-- Risotto -->
+            <div class="menu-item" data-category="risotto">
+                <img src="https://i.pinimg.com/736x/83/89/4c/83894cf956d390a713361cea45d54423.jpg" alt="Mushroom Risotto">
+                <h3>Mushroom Risotto</h3>
+                <p>Creamy risotto with wild mushrooms</p>
+                <span class="price">$16.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="risotto">
+                <img src="https://i.pinimg.com/736x/af/0a/48/af0a48a3835e5be59617a749d3925be2.jpg" alt="Risotto Milanese">
+                <h3>Risotto Milanese</h3>
+                <p>Risotto with saffron and parmesan</p>
+                <span class="price">$17.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="risotto">
+                <img src="https://i.pinimg.com/564x/12/56/77/1256772112a421bef6ef317b018b15e9.jpg" alt="Risotto aux fruits de mer">
+                <h3>Seafood Risotto</h3>
+                <p>Creamy risotto with shrimp, clams, and calamari</p>
+                <span class="price">$18.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+    
+            <!-- Antipasti -->
+            <div class="menu-item" data-category="antipasti">
+                <img src="https://i.pinimg.com/564x/05/ec/c2/05ecc205e3bd7a827043f1cef139651e.jpg" alt="Antipasto Misto">
+                <h3>Antipasto Misto</h3>
+                <p>Assortment of Italian cured meats, cheeses, and olives</p>
+                <span class="price">$18.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="antipasti">
+                <img src="https://i.pinimg.com/736x/4c/22/08/4c22083319034ab9d64d244819be8683.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <p>Grilled bread topped with tomatoes, garlic, and olive oil</p>
+                <span class="price">$9.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+            <div class="menu-item" data-category="antipasti">
+                <img src="https://i.pinimg.com/736x/de/ca/3a/deca3ade0fd3252359997d6c97f4bf9c.jpg" alt="Caprese Salad">
+                <h3>Caprese Salad</h3>
+                <p>Fresh tomatoes, mozzarella, basil, and balsamic glaze</p>
+                <span class="price">$11.99</span>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+        <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pasta">Pasta</button>
+            <button class="filter-btn" data-filter="pizza">Pizza</button>
+            <button class="filter-btn" data-filter="risotto">Risotto</button>
+            <button class="filter-btn" data-filter="antipasti">Antipasti</button>
+        </div>
+    </section>
+    <div class="menu-separator">
+  <div class="menu-separator-icon">
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+
+<section class="moroccan-menu">
+    <h2>Moroccan Delights</h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-category="tajine">
+            <img src="https://i.pinimg.com/564x/a4/a6/9a/a4a69a96f8e3168cfc8b32b426125ed4.jpg" alt="Tajine de Poulet">
+            <h3>Tajine de Poulet</h3>
+            <p>Slow-cooked chicken with preserved lemons and olives</p>
+            <span class="price">$19.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="couscous">
+            <img src="https://i.pinimg.com/564x/87/50/db/8750db75211657babd752e341b3f9697.jpg" alt="Couscous Royal">
+            <h3>Couscous Royal</h3>
+            <p>Semolina served with lamb, chicken, and vegetables</p>
+            <span class="price">$22.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="pastilla">
+            <img src="https://i.pinimg.com/564x/f1/d3/a4/f1d3a41818cb8f9e723c3718c1978c32.jpg" alt="Pastilla au Poulet">
+            <h3>Pastilla au Poulet</h3>
+            <p>Chicken pie with almonds, cinnamon, and powdered sugar</p>
+            <span class="price">$17.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="soup">
+            <img src="https://i.pinimg.com/564x/d0/ca/37/d0ca3745387ad6d51b63d5bd2b3be5d9.jpg" alt="Harira">
+            <h3>Harira</h3>
+            <p>Traditional Moroccan soup with lentils, tomatoes, and chickpeas</p>
+            <span class="price">$9.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+    </div>
+    <div class="menu-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tajine">Tajine</button>
+        <button class="filter-btn" data-filter="couscous">Couscous</button>
+        <button class="filter-btn" data-filter="pastilla">Pastilla</button>
+        <button class="filter-btn" data-filter="soup">Soup</button>
+    </div>
+</section>
+
+<div class="menu-separator">
+  <div class="menu-separator-icon">
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+
+<section class="french-menu">
+    <h2>French Cuisine</h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-category="main">
+            <img src="https://i.pinimg.com/564x/3b/01/78/3b017802f5f65689c33a54ebe7f0694f.jpg" alt="Coq au Vin">
+            <h3>Coq au Vin</h3>
+            <p>Chicken braised with wine, mushrooms, and onions</p>
+            <span class="price">$21.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="vegetarian">
+            <img src="https://i.pinimg.com/564x/5f/29/4f/5f294f0460e465efbcb1ccd78fa59e90.jpg" alt="Ratatouille">
+            <h3>Ratatouille</h3>
+            <p>Mixed vegetables stewed in olive oil with herbs</p>
+            <span class="price">$15.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="soup">
+            <img src="https://i.pinimg.com/564x/86/dc/a2/86dca25a10e7a9187b5bb87ab4fba3dc.jpg" alt="Soupe à l'oignon">
+            <h3>Soupe à l'oignon</h3>
+            <p>French onion soup with toasted bread and melted cheese</p>
+            <span class="price">$12.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+        <div class="menu-item" data-category="dessert">
+            <img src="https://i.pinimg.com/564x/b8/16/af/b816af22c30988d63b90e312e4717157.jpg" alt="Crème Brûlée">
+            <h3>Crème Brûlée</h3>
+            <p>Rich custard topped with caramelized sugar</p>
+            <span class="price">$8.99</span>
+            <button class="add-to-cart">+</button>
+        </div>
+    </div>
+    <div class="menu-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="main">Main Course</button>
+        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+        <button class="filter-btn" data-filter="soup">Soup</button>
+        <button class="filter-btn" data-filter="dessert">Dessert</button>
+    </div>
+</section>
+
+
+    
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"The recipes on FoodyChef are amazing! I've learned so much and my family loves the meals I prepare now."</p>
+                <span class="author">- Sarah J.</span>
+            </div>
+            <div class="testimonial">
+                <p>"FoodyChef has completely changed the way I cook! The step-by-step guides are easy to follow, and the results are always delicious."</p>
+                <span class="author">- Michael R.</span>
+            </div>
+            <div class="testimonial">
+                <p>"I love how FoodyChef offers a variety of recipes for different skill levels. It's perfect whether I'm in a hurry or want to try something more complex!"</p>
+                <span class="author">- Emma L.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The ingredients are always accessible, and the flavors are incredible. I'm so glad I found FoodyChef!"</p>
+                <span class="author">- Liam K.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Thanks to FoodyChef, cooking has become a fun and stress-free activity in our household. We can try new cuisines every week!"</p>
+                <span class="author">- Olivia M.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest recipes and cooking tips!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" id="contact">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong>Total: </strong> <span id="cart-total">$0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: chaimae15elel@gmail.com</p>
+                <p>Phone: (+212) 625-854418</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FoodyChef. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="slowedScroll.js"></script>
+</body>
+</html>
